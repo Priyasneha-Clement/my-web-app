@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Installing Dependencies
+      - npm install  # Adjust for your app (e.g., Node.js)
+  build:
+    commands:
+      - echo Build Started
+      - npm run build  # Adjust or remove if no build step
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
