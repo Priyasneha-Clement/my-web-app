@@ -3,10 +3,12 @@ phases:
   install:
     commands:
       - echo Installing Dependencies
+      - cd my-web-app
       - npm install  # Adjust for your app (e.g., Node.js)
   build:
     commands:
       - echo Build Started
+      - cd my-web-app
       - npm run build  # Adjust or remove if no build step
 artifacts:
   files:
