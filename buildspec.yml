@@ -4,6 +4,8 @@ phases:
     commands:
       - echo Installing Dependencies
       - cd my-web-app
+      - pwd
+      - ls -R
       - npm install  # Adjust for your app (e.g., Node.js)
   build:
     commands:
