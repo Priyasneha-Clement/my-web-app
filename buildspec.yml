@@ -1,18 +1,9 @@
 version: 0.2
 phases:
-  install:
-    commands:
-      - echo Installing Dependencies
-      - cd my-web-app
-      - pwd
-      - ls -R
-      - npm install  # Adjust for your app (e.g., Node.js)
   build:
     commands:
       - echo Build Started
-      - cd my-web-app
-      - npm run build  # Adjust or remove if no build step
+      - echo No dependencies to install as this is a static HTML project
 artifacts:
   files:
-    - '**/*'
-  discard-paths: yes
+    - index.html
