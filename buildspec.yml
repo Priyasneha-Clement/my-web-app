@@ -6,4 +6,5 @@ phases:
       - echo No dependencies to install as this is a static HTML project
 artifacts:
   files:
-    - index.html
+    - '**/*'
+  discard-paths: yes
