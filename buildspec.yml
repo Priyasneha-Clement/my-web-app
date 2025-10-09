@@ -1,10 +1,12 @@
 version: 0.2
+
 phases:
   build:
     commands:
-      - echo Build Started
+      - echo Build started on `date`
       - echo No dependencies to install as this is a static HTML project
+
 artifacts:
   files:
     - '**/*'
-  discard-paths: yes
+  discard-paths: no
